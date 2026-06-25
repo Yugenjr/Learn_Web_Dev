@@ -8,13 +8,6 @@ window.alert("This is an alert");    //alert box
 
 multiline comment
 */
-let x;
-let y;
-x=100;
-y=200;
-let z = x + y;
-console.log(z); //addition of two numbers
-
 let age=20;
 console.log(`You are ${age} years old`); //string interpolation
 let a=10;
@@ -31,9 +24,9 @@ let age1 = 25; //let keyword
 let name1 = "John"; //let keyword
 let isStudent = true; //let keyword
 
-document.getElementById("p1").textContent = "Age: " + age1; //DOM manipulation
-document.getElementById("p2").textContent = "Name: " + name1; //DOM manipulation
-document.getElementById("p3").textContent = "Is Student: " + isStudent; //DOM manipulation
+//document.getElementById("p1").textContent = "Age: " + age1; //DOM manipulation
+//document.getElementById("p2").textContent = "Name: " + name1; //DOM manipulation
+//document.getElementById("p3").textContent = "Is Student: " + isStudent; //DOM manipulation
 
 //------------------------------------------------------------------------------------------------------------//
 
@@ -76,4 +69,39 @@ console.log(students);
 document.getElementById("mySubmit").onclick = function() {
     let userName = document.getElementById("myInput").value;
    document.getElementById("myh1").textContent = "Hello " + userName;
+}
+
+//type conversion
+
+let x="pizza";
+let y="pizza";
+let z="pizza";
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+console.log(typeof x , x); //NaN
+console.log(typeof y , y); //pizza
+console.log(typeof z , z); //true
+
+x="";
+y="";
+z="";
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+console.log(typeof x , x); //0  
+console.log(typeof y , y); //""
+console.log(typeof z , z); //false
+
+// -------------------------------------------------------------------------------------------------
+
+//var let const
+
+let pi=3.14159;
+let radius;
+let circumference;
+
+document.getElementById("mySubmit").onclick = function() {
+    radius = document.getElementById("myInput").value;
+    document.getElementById("myh1").textContent = "The circumference of the circle is: " + (2 * pi * radius);      
 }
