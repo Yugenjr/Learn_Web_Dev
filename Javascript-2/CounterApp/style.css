@@ -1,0 +1,30 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 8em;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#countLabel span{
+    font-size: 0.5em;
+}
+#buttons{ 
+    text-align: center;
+}
+#buttons button{
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+    color: white;
+    background-color: #80d66b;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+}
+#buttons button:hover{
+    background-color: #075509;   
+}

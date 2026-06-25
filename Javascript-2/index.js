@@ -97,11 +97,11 @@ console.log(typeof z , z); //false
 
 //var let const
 
-let pi=3.14159;
+const PI=3.14159;
 let radius;
 let circumference;
 
 document.getElementById("mySubmit").onclick = function() {
     radius = document.getElementById("myInput").value;
-    document.getElementById("myh1").textContent = "The circumference of the circle is: " + (2 * pi * radius);      
+    document.getElementById("myh1").textContent = "The circumference of the circle is: " + (2 * PI * radius);      
 }
